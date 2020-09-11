@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DietApp.Algorithm" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABACAIAAAAAEAIAQYAAgQAAAAAAAQAAAAAEBIAgAQA=</HashCode>
+      <FileName>Algorithm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DietApp.DataBaseSolution" Collapsed="true">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAACAgABACAAAEBgAAQQQAACDABAAggAABAIAICAA=</HashCode>
+      <FileName>DataBaseSolution.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DietApp.FoodPlan" Collapsed="true">
+    <Position X="2.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAIAAAAAAAICAAAAAAAAACAAAAAAABAAA=</HashCode>
+      <FileName>FoodPlan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DietApp.LoginWindow" Collapsed="true">
+    <Position X="10.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABIABAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>LoginWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DietApp.MainAppWindow" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAABABAAAAAAAAAAAAAAAEAAIAABAAAACAAAAAAQA=</HashCode>
+      <FileName>MainAppWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DietApp.MainWindow" Collapsed="true">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAEBAAAAAAAAAAAAAAAAAAAACAAAAQAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DietApp.Meal" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAIEAAACRAAgAEAAIQAIAAAACAAAA=</HashCode>
+      <FileName>Meal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DietApp.Product" Collapsed="true">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAEAAAAgAAAAIAAAAAQAAAAEAACAAAAAgAAAAAA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DietApp.SignInWindow" Collapsed="true">
+    <Position X="8.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABIABAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>SignInWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DietApp.UserControlAccount" Collapsed="true">
+    <Position X="5.25" Y="4" Width="1.75" />
+    <InheritanceLine Type="System.Windows.Controls.UserControl" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="7.25" Y="3.375" />
+        <Point X="5.433" Y="3.375" />
+        <Point X="5.433" Y="4.346" />
+        <Point X="7" Y="4.346" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControlAccount.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.65" />
+  </Class>
+  <Class Name="DietApp.UserControlFoodPlan" Collapsed="true">
+    <Position X="9.25" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAACAAAAAgAAAABAAAAAAAAAA=</HashCode>
+      <FileName>UserControlFoodPlan.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DietApp.UserControlFoodPlanGenerated" Collapsed="true">
+    <Position X="9.25" Y="6" Width="2.5" />
+    <InheritanceLine Type="System.Windows.Controls.UserControl" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="3.691" />
+        <Point X="8" Y="4.95" />
+        <Point X="12.125" Y="4.95" />
+        <Point X="12.125" Y="6.312" />
+        <Point X="11.75" Y="6.312" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>UserControlFoodPlanGenerated.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DietApp.UserControlFoodPlanGenerated4M" Collapsed="true">
+    <Position X="9.25" Y="6.75" Width="2.5" />
+    <InheritanceLine Type="System.Windows.Controls.UserControl" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="3.691" />
+        <Point X="8" Y="4.95" />
+        <Point X="12.125" Y="4.95" />
+        <Point X="12.125" Y="7.125" />
+        <Point X="11.75" Y="7.125" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>UserControlFoodPlanGenerated4M.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DietApp.UserControlFoodPlanGenerated5M" Collapsed="true">
+    <Position X="9.25" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>UserControlFoodPlanGenerated5M.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DietApp.UserControlNotebook" Collapsed="true">
+    <Position X="9" Y="4" Width="1.75" />
+    <InheritanceLine Type="System.Windows.Controls.UserControl" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="3.375" />
+        <Point X="10.75" Y="3.375" />
+        <Point X="10.75" Y="4.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BIAAAAACAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>UserControlNotebook.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DietApp.UserControlNegativeSearchResult" Collapsed="true">
+    <Position X="4" Y="6.75" Width="2.5" />
+    <InheritanceLine Type="System.Windows.Controls.UserControl" ManuallyRouted="true">
+      <Path>
+        <Point X="8" Y="3.691" />
+        <Point X="8" Y="4.904" />
+        <Point X="6.608" Y="4.904" />
+        <Point X="6.608" Y="7.096" />
+        <Point X="6.5" Y="7.096" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControlNegativeSearchResult.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DietApp.UserControlPositiveSearchResult" Collapsed="true">
+    <Position X="4" Y="6" Width="2.5" />
+    <InheritanceLine Type="System.Windows.Controls.UserControl" ManuallyRouted="true">
+      <Path>
+        <Point X="8" Y="3.691" />
+        <Point X="8" Y="4.951" />
+        <Point X="6.623" Y="4.951" />
+        <Point X="6.623" Y="6.346" />
+        <Point X="6.5" Y="6.346" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControlPositiveSearchResult.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DietApp.UserControlProducts" Collapsed="true">
+    <Position X="6.75" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControlProducts.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="DietApp.UserControlSearch" Collapsed="true">
+    <Position X="4" Y="5.25" Width="2.5" />
+    <InheritanceLine Type="System.Windows.Controls.UserControl" ManuallyRouted="true">
+      <Path>
+        <Point X="8" Y="3.691" />
+        <Point X="8" Y="4.95" />
+        <Point X="5.25" Y="4.95" />
+        <Point X="5.25" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControlSearch.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DietApp.UserProductsRecipes" Collapsed="true">
+    <Position X="6.75" Y="6" Width="2.25" />
+    <InheritanceLine Type="System.Windows.Controls.UserControl" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="3.691" />
+        <Point X="8" Y="4.929" />
+        <Point X="6.608" Y="4.929" />
+        <Point X="6.608" Y="6.375" />
+        <Point X="6.75" Y="6.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAgAAQA=</HashCode>
+      <FileName>UserProductsRecipes.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Windows.Window" Collapsed="true">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.UserControl" Collapsed="true">
+    <Position X="7.25" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

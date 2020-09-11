@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="DietApp.UserControlNotebook"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DietApp" 
+             xmlns:ChartToolKit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid x:Name="GridMain" Background="White">
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Height="1150" Width="630" >
+            <Grid  Margin="103,0,28.2,0.2" Width="630">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="80"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Text="Dziennik postępów" VerticalAlignment="Top"  HorizontalAlignment="Left" Foreground="#FF5C99D6" FontSize="20" Margin="0,10,0,0"/>
+                <TextBox materialDesign:HintAssist.Hint="Aktualna waga"  Grid.Row="1" FontSize="12" Foreground="#FF5C99D6" HorizontalAlignment="Left" x:Name="WeightBox"  Height="40" Width="200" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" Margin="10,20,0,20" Grid.ColumnSpan="2"  />
+                <Button Grid.Row="1" Grid.Column="1" x:Name="SaveButton" HorizontalAlignment="Center" Height="40" Width="120"  Content="Aktualizuj" Style="{StaticResource MaterialDesignRaisedDarkButton}" Click="SaveButton_Click" />
+            </Grid>
+            <Grid HorizontalAlignment="Center"  Margin="103,0,28.2,0.2" Width="630">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0"/>
+                <GroupBox Foreground="#FF5C99D6" Grid.Row="1" Header="Historia postępów" Width="500"  Height="300">
+             
+                    <ChartToolKit:Chart  Name="lineChart" >
+                        <ChartToolKit:LineSeries   ItemsSource="{Binding}" 
+IsSelectionEnabled="True" Title="Waga"  IndependentValueBinding="{Binding Path=Key}" DependentValueBinding="{Binding Path=Value}"  />
+                        
+
+                    
+                    </ChartToolKit:Chart>
+                    
+                </GroupBox>
+            </Grid>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

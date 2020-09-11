@@ -1,0 +1,121 @@
+﻿<UserControl x:Class="DietApp.UserControlAccount"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DietApp" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+        <ScrollViewer HorizontalScrollBarVisibility="Hidden" Margin="0,10,0,-50" Height="520" VerticalAlignment="Top">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Height="1150">
+                <Grid x:Name="GridMain" VerticalAlignment="Bottom" Height="1150" Margin="103,0,28.2,0.2" Width="630" >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="80" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="60" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Dane użytkownika" Grid.Row="0" HorizontalAlignment="Left" Foreground="#FF5C99D6" FontSize="20"/>
+            <ComboBox
+  materialDesign:HintAssist.Hint="Płeć" Grid.Row="1" FontSize="12" Foreground="#FF5C99D6" HorizontalAlignment="Center" x:Name="SexBox"  Margin="10,10.6,119,9.8" Height="40" Width="501">
+                        <ComboBoxItem Content="Kobieta"/>
+
+
+                        <ComboBoxItem Content="Mężczyzna"/>
+                    
+
+                    </ComboBox>
+                    <TextBox ToolTip="Wiek w pełnych latach." materialDesign:HintAssist.Hint="Wiek"  Grid.Row="2" FontSize="12" Foreground="#FF5C99D6" HorizontalAlignment="Center" x:Name="AgeBox"  Margin="10,10.6,119,9.8" Height="40" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" Width="501"  />
+                    <TextBox ToolTip="Wzrost w centymetrach." materialDesign:HintAssist.Hint="Wzrost"  Grid.Row="3" FontSize="12" Foreground="#FF5C99D6" HorizontalAlignment="Center" x:Name="HeightBox"  Margin="10,10.6,119,9.8" Height="40" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" Width="501"  />
+                    <TextBox ToolTip="Waga w kilogramach." materialDesign:HintAssist.Hint="Waga"  Grid.Row="4" FontSize="12" Foreground="#FF5C99D6" HorizontalAlignment="Center" x:Name="WeightBox"  Margin="10,10.6,119,9.8" Height="40" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" Width="501"  />
+                    <ComboBox
+  materialDesign:HintAssist.Hint="Somatotyp" Grid.Row="5" FontSize="12" Foreground="#FF5C99D6" HorizontalAlignment="Center" x:Name="TypeBox"  Margin="10,10.6,119,9.8" Height="40" Width="501">
+                        <ComboBoxItem Content="Typ ektomorficzny" ToolTip="Osoba charakteryzuja się smukłą, delikatną, bardzo szczupłą budową ciała (chudą szyją, wątłą klatką piersiową), brakiem otłuszczenia oraz szybkim metabolizmem."/>
+
+
+
+                        <ComboBoxItem Content="Typ mezomorficzny" ToolTip="Osoba o proporcjonalnej, atletycznej budowie, silnie umięśnionej z tendencją do łatwego zwiększania masy ciała."/>
+
+
+                        <ComboBoxItem Content="Typ endomorficzny" ToolTip="Osoba charakteryzująca się ciężką, okrągłą budową ciała, wolnym metabolizmem związanym dużą masą mięśniową oraz tłuszczową, co wzmaga tendencję do tycia."/>
+
+
+                    </ComboBox>
+                    <ComboBox
+  materialDesign:HintAssist.Hint="Dzienna aktywność fizyczna" Grid.Row="6" FontSize="12" Foreground="#FF5C99D6" HorizontalAlignment="Center" x:Name="AcitvityBox"  Margin="10,10.6,119,9.8" Height="40" Width="501">
+                        <ComboBoxItem ToolTip="Osoba mało ruchliwa wykonująca pracę siedzącą." Content="Niska"/>
+
+                        <ComboBoxItem ToolTip="Osoba, której praca wymaga zwiększonego ruchu." Content="Średnia"/>
+
+                        <ComboBoxItem ToolTip="Osoba pracująca fizycznie." Content="Wysoka"/>
+
+                    </ComboBox>
+                    <GroupBox
+                    Header="Trening siłowy" Grid.Row="7" HorizontalAlignment="Center"  x:Name="SActivityBox"  Margin="10,10.6,119,9.8"  Width="501" Style="{DynamicResource MaterialDesignGroupBox}">
+                        <StackPanel>
+                            <TextBox Margin="0,0,0,0" materialDesign:HintAssist.Hint="Liczba treningów tygodniowo" FontSize="12" Foreground="#FF5C99D6"  x:Name="SDays" Height="40" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"  />
+                            <TextBox  Margin="0,10,0,10" materialDesign:HintAssist.Hint="Liczba minut dziennie" FontSize="12" Foreground="#FF5C99D6"  x:Name="SMinutes" Height="40" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"  />
+                            <ComboBox
+  materialDesign:HintAssist.Hint="Intensywność" FontSize="12" Foreground="#FF5C99D6" x:Name="SIntensivity" Height="40" Margin="0,10,0,10">
+                                <ComboBoxItem Content="Niska"/>
+                                <ComboBoxItem Content="Średnia"/>
+                                <ComboBoxItem Content="Wysoka"/>
+                            </ComboBox>
+                        </StackPanel>
+                    </GroupBox>
+                    <GroupBox
+                    Header="Trening aerobowy" Grid.Row="8" HorizontalAlignment="Center"  x:Name="AActivityBox"  Margin="10,10.6,119,9.8"  Width="501">
+                        <StackPanel>
+                            <TextBox Margin="0,0,0,0" materialDesign:HintAssist.Hint="Liczba treningów tygodniowo" FontSize="12" Foreground="#FF5C99D6"  x:Name="ADays" Height="40" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"  />
+                            <TextBox  Margin="0,10,0,10" materialDesign:HintAssist.Hint="Liczba minut dziennie" FontSize="12" Foreground="#FF5C99D6"  x:Name="AMinutes" Height="40" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"  />
+                            <ComboBox
+  materialDesign:HintAssist.Hint="Intensywność" FontSize="12" Foreground="#FF5C99D6" x:Name="AIntensivity" Height="40" Margin="0,10,0,10">
+                                <ComboBoxItem Content="Niska"/>
+                                <ComboBoxItem Content="Średnia"/>
+                                <ComboBoxItem Content="Wysoka"/>
+                            </ComboBox>
+                        </StackPanel>
+                    </GroupBox>
+                    <StackPanel Grid.Row="9" HorizontalAlignment="Center"  x:Name="FoodExclusions"  Margin="10,10.6,119,9.8"  Width="501">
+                        <TextBlock  Foreground="#FF5C99D6" FontSize="12" Text="Wykluczenia grup pokarmów" ToolTip="Pokarmy na które występuje nietolerancja."/>
+                        <CheckBox
+    IsChecked="False"
+    materialDesign:CheckBoxAssist.CheckBoxSize="20" Foreground="#FF5C99D6" x:Name="Diary" Content="Nabiał"/>
+                      
+                        <CheckBox
+    IsChecked="False"
+    materialDesign:CheckBoxAssist.CheckBoxSize="20" Foreground="#FF5C99D6" x:Name="Gluten" Content="Gluten"/>
+
+
+                        <CheckBox
+    IsChecked="False"
+    materialDesign:CheckBoxAssist.CheckBoxSize="20" Foreground="#FF5C99D6" x:Name="Meat" Content="Mięso"/>
+                     
+                    </StackPanel>
+                    <ComboBox materialDesign:HintAssist.Hint="Preferowana liczba posiłków" Grid.Row="10" FontSize="12" Foreground="#FF5C99D6" HorizontalAlignment="Center" x:Name="MealNumber"  Margin="10,10.6,119,9.8" Height="40" Width="501">
+                        <ComboBoxItem Content="3"/>
+
+                        <ComboBoxItem Content="4"/>
+
+
+                        <ComboBoxItem Content="5"/>
+                   
+                    </ComboBox>
+
+                    <Button Grid.Row="11" x:Name="SaveButton" HorizontalAlignment="Left" Height="40" Width="120"  Content="Zapisz" Style="{StaticResource MaterialDesignRaisedDarkButton}" Click="SaveButton_Click" />
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="DietApp.UserControlPositiveSearchResult"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DietApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid   Width="630" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Border BorderThickness="1" BorderBrush="#FF5C99D6"  Grid.Column="0" Grid.Row="0" />
+        <Border BorderThickness="1" BorderBrush="#FF5C99D6" Grid.Column="1" Grid.Row="0" />
+        <Border BorderThickness="1" BorderBrush="#FF5C99D6"  Grid.Column="2" Grid.Row="0" />
+        <Border BorderThickness="1" BorderBrush="#FF5C99D6" Grid.Column="3" Grid.Row="0"/>
+        <Border BorderThickness="1" BorderBrush="#FF5C99D6"  Grid.Column="0" Grid.Row="1" />
+        <Border BorderThickness="1" BorderBrush="#FF5C99D6" Grid.Column="1" Grid.Row="1" />
+        <Border BorderThickness="1" BorderBrush="#FF5C99D6"  Grid.Column="2" Grid.Row="1" />
+        <Border BorderThickness="1" BorderBrush="#FF5C99D6" Grid.Column="3" Grid.Row="1"/>
+        <TextBlock Text=" NAZWA PRODUKTU " VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF5C99D6" Style="{StaticResource MaterialDesignButtonTextBlock}" Grid.Column="0" Grid.Row="0"/>
+        <TextBlock Text=" ILOŚĆ " VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF5C99D6" Style="{StaticResource MaterialDesignButtonTextBlock}" Grid.Column="1" Grid.Row="0" />
+        <TextBlock Text=" JEDNOSTKA " VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF5C99D6" Style="{StaticResource MaterialDesignButtonTextBlock}" Grid.Column="2" Grid.Row="0" />
+        <TextBlock Text=" KALORYCZNOŚĆ [KCAL] " VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF5C99D6" Style="{StaticResource MaterialDesignButtonTextBlock}" Grid.Column="3" Grid.Row="0" />
+        <TextBlock  Text="{Binding}" x:Name="nazwa" VerticalAlignment="Center" Foreground="#FF5C99D6" Style="{StaticResource MaterialDesignCaptionTextBlock}" Grid.Column="0" Grid.Row="1" Margin="10,0.6,0.4,1"/>
+        <TextBlock Text="{Binding}" x:Name="ilosc" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="#FF5C99D6" Style="{StaticResource MaterialDesignCaptionTextBlock}" Grid.Row="1" Margin="10,1.6,0,2" Width="35" Grid.Column="1"  />
+        <TextBlock Text="{Binding}"  x:Name="jednostka"  VerticalAlignment="Center" Foreground="#FF5C99D6" Style="{StaticResource MaterialDesignCaptionTextBlock}" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2" Margin="10,1.6,-0.4,1.2"   />
+        <TextBlock Text="{Binding}"  x:Name="kcal" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="#FF5C99D6" Style="{StaticResource MaterialDesignCaptionTextBlock}" Grid.Column="3" Grid.Row="1" Margin="10,1.6,0,0.8" />
+
+    </Grid>
+</UserControl>

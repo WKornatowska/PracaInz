@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="DietApp.UserProductsRecipes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:DietApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+        <ScrollViewer HorizontalScrollBarVisibility="Hidden" Margin="0,10,0,-50" Height="520" VerticalAlignment="Top">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Height="1200">
+                <Grid x:Name="GridMain" VerticalAlignment="Bottom" Height="1200" Margin="103,0,28.2,0.2" Width="630" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="350"/>
+                        <RowDefinition Height="750"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Produkty i przepisy" Grid.Row="0" HorizontalAlignment="Left" Foreground="#FF5C99D6" FontSize="20" VerticalAlignment="Center"/>
+                    <GroupBox Header="Dodaj produkt do bazy danych" Grid.Row="1" HorizontalAlignment="Center"  x:Name="ProductBox"  Margin="10,10.6,119,9.8"  Width="501">
+                        <StackPanel>
+                            <TextBox Margin="0,0,0,0" materialDesign:HintAssist.Hint="Nazwa produktu" FontSize="12" Foreground="#FF5C99D6"  x:Name="ProductName" Height="40" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"  />
+                            <TextBox Margin="0,10,0,10" materialDesign:HintAssist.Hint="Ilosc" FontSize="12" Foreground="#FF5C99D6"  x:Name="Quan" Height="40" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"  />
+                            <ComboBox Margin="0,10,0,10"
+                                materialDesign:HintAssist.Hint="Jednostka" FontSize="12" Foreground="#FF5C99D6"  x:Name="Unit"  Height="40" Width="501">
+                                <ComboBoxItem Content="g"/>
+                                <ComboBoxItem Content="szt"/>
+                            </ComboBox>     
+                            <TextBox  Margin="0,10,0,10" materialDesign:HintAssist.Hint="Kaloryczność [KCAL]" FontSize="12" Foreground="#FF5C99D6"  x:Name="ProductKCAL" Height="40" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"  />
+                            <Button  x:Name="SaveProductButton" HorizontalAlignment="Right" Height="40" Width="120"  Content="Zapisz" Style="{StaticResource MaterialDesignRaisedDarkButton}" Click="SaveProductButton_Click" />
+                        </StackPanel>
+                    </GroupBox>
+                    <GroupBox Header="Dodaj przepis do bazy danych" Grid.Row="2" HorizontalAlignment="Center"  x:Name="RecipeBox" Margin="10,10.6,119,9.8"  Width="501">
+                        <StackPanel>
+                            <TextBox  Margin="0,0,0,0" materialDesign:HintAssist.Hint="Nazwa posiłku" FontSize="12" Foreground="#FF5C99D6"  x:Name="RecipeName" Height="40" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"  />
+                            <TextBox   Margin="0,10,0,10" materialDesign:HintAssist.Hint="Kaloryczność [KCAL]" FontSize="12" Foreground="#FF5C99D6"  x:Name="RecipeKCAL" Height="40" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"  />
+                            <TextBox   Margin="0,10,0,10"  Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" materialDesign:HintAssist.Hint="Sładniki" FontSize="12" Foreground="#FF5C99D6"  x:Name="RecipeIng" Height="100"   />
+                            <TextBox   Margin="0,10,0,10"  Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" materialDesign:HintAssist.Hint="Sposób przygotowania" FontSize="12" Foreground="#FF5C99D6"  x:Name="RecipeDesc" Height="150"   />
+                            <ComboBox 
+                                materialDesign:HintAssist.Hint="Pora posiłku" FontSize="12" Foreground="#FF5C99D6"  x:Name="DT" Margin="0,10,0,10" Height="40">
+                                <ComboBoxItem Content="Śniadanie"/>
+                                <ComboBoxItem Content="II śniadanie/podwieczorek"/>
+                                <ComboBoxItem Content="Obiad"/>
+                                <ComboBoxItem Content="Kolacja"/>
+                            </ComboBox>
+                            <StackPanel Width="501">
+                                <TextBlock Margin="0,10,0,10"   Foreground="#FF5C99D6" FontSize="12" Text="W przepisie występuje" />
+                                <CheckBox Margin="0,10,0,10"  
+    IsChecked="False"
+    materialDesign:CheckBoxAssist.CheckBoxSize="20" Foreground="#FF5C99D6" x:Name="Diary">
+                                    Nabiał
+                                </CheckBox>
+                                <CheckBox Margin="0,10,0,10"  
+    IsChecked="False"
+    materialDesign:CheckBoxAssist.CheckBoxSize="20" Foreground="#FF5C99D6" x:Name="Gluten">
+                                    Gluten
+                                </CheckBox>
+                                <CheckBox Margin="0,10,0,10"  
+    IsChecked="False"
+    materialDesign:CheckBoxAssist.CheckBoxSize="20" Foreground="#FF5C99D6" x:Name="Meat">
+                                    Mięso
+                                </CheckBox>
+                            </StackPanel>
+                            <Button  x:Name="SaveRecipetButton" HorizontalAlignment="Right" Height="40" Width="120"  Content="Zapisz" Style="{StaticResource MaterialDesignRaisedDarkButton}" Click="SaveRecipetButton_Click" />
+                        </StackPanel>
+                    </GroupBox>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
